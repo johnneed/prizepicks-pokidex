@@ -18,7 +18,6 @@
   position: relative;
   border-radius: 3px;
   font-family: helvetica, arial, sans-serif;
-
 }
 
 .pokecard_show-back {
@@ -57,24 +56,137 @@
 
 .pokecard_pic{
   order: 0;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   align-self: center;
 }
 .pokecard_image {
   width: 100%;
 }
+
 .pokecard_name {
   padding-top: 1rem;
   font-family: Courgette;
   font-size: 3rem;
-  color: goldenrod;
+  color: rgb(255, 145, 0);
   text-shadow: rgba(0,0,0, 100) 1px 1px;
   order: 0;
   flex: 0 1 auto;
   align-self: center;
 }
+
 .pokecard_types{
+  padding-bottom: 1rem;
   order: 0;
   flex: 0 1 auto;
   align-self: center;
+}
+
+.pokecard_back-header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+.pokecard_back-header .pokecard_name {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+.pokecard_small-image{
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+.pokecard_faqs{
+  width: calc(100% - 2rem);
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". ."
+    ". .";
+  background: cornflowerblue;
+  margin: 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.pokecard_faqs > div:first-child{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: left;
+}
+
+.pokecard_faqs > div > span:first-child {
+font-family: Courgette;
+  font-size: large;
+}
+
+
+
+.pokecard_faqs > div > span:last-child{
+  font-size: large;
+}
+.pokecard_faqs > div:nth-child(2){
+  grid-column-start: 2;
+  grid-column-end: 2;
+  text-align: left;
+}
+
+.pokecard_faqs > div:nth-child(3){
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: left;
+}
+.pokecard_faqs > div:last-child{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  text-align: left;
+}
+.pokecard_faqs > div > span {
+  display: inline-block;
+  margin: 0 0.2rem;
+  text-align: left;
+}
+
+.pokecard_faqs > div:last-child > div{
+  margin: 0 0.2rem;
+}
+.pokecard_stats{
+  width: calc(100% - 2rem);
+  padding: 0.5rem;
+  background-color: darkviolet;
+  margin: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+}
+
+.pokecard_stats > div {
+  text-align: left;
+}
+.pokecard_stats > div > span:first-child {
+  font-family: Courgette;
+  font-size: large;
+}
+.pokecard_stats > div > span:last-child{
+  font-size: large;
+}
+
+.pokecard_stats  > div > span:first-child {
+  display: inline-block;
+  margin-right: 0.2rem;
+  text-align: left;
 }

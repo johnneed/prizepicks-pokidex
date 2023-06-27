@@ -13,7 +13,7 @@ import styles from './Pokedex.module.css';
 export function Pokedex() {
     const pagination = useAppSelector(selectPagination);
     const pokeDex = useAppSelector(selectPokemonList);
-    const pokemonList = Object.values(pokeDex).sort((v1: Pokemon, v2: Pokemon) => v1.id - v2.id)
+    const pokemonList = Object.values(pokeDex).sort((v1: Pokemon, v2: Pokemon) => v1.order - v2.order)
     const dispatch = useAppDispatch();
       const fetchData = () => {
         dispatch(fetchPokemons())

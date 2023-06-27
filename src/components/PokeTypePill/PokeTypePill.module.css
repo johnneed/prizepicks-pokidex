@@ -49,3 +49,24 @@ div.ground{
 div.fighting{
   background-color: firebrick;
 }
+
+div.electric{
+  background-color: blanchedalmond;
+  color: black;
+}
+
+div.psychic{
+  background-color: lavender;
+  color:  black;
+}
+div.dragon{
+  background-color: firebrick;
+}
+
+div.rock{background-color: peru;}
+div.steel{background-color: silver;
+color: black;}
+div.ice{background-color: aliceblue;
+color: black;}
+
+
