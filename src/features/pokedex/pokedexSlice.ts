@@ -78,13 +78,14 @@ export const selectPagination = (state: RootState) => state.pokedex.pagination;
 export const fetchPokemons = (): AppThunk => async (dispatch, getState) => {
       const currentPagination = selectPagination(getState());
       const currentPokemonList = selectPokemonList(getState());
-      const response = await listPokemons();
-      try {
+    try {
+        const response = await listPokemons(currentPagination.offset, currentPagination.limit);
         const newPagination = {
           offset: currentPagination.offset + currentPagination.limit,
           limit: currentPagination.limit,
           count: response.count
         };
+
         dispatch(updatePagination(newPagination));
 
         const newPokemons = await Promise.all(response.results.map(result => getPokemonByName(result.name)));
