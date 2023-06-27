@@ -37,3 +37,34 @@
     transform: translateY(0px);
   }
 }
+
+.App-scroll-down{
+  text-align: center;
+  margin: 1rem auto;
+  transition: 1s;
+}
+
+
+
+.App-caret-down{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #999;
+  margin: 0 auto;
+  transition: 1s;
+
+}
+.App-scroll-down:hover .App-caret-down{
+  border-top: 50px solid #555;
+}
+
+.App-scroll-message{
+  margin-top: 1rem;
+  color: white;
+  transition: 1s;
+}
+.App-scroll-down:hover .App-scroll-message {
+  color: #555;
+}

@@ -9,7 +9,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+          <div className={"App-scroll-down"}>
+            <div className={"App-caret-down"}></div>
+              <div className={"App-scroll-message"}>Scroll Down</div>
+          </div>
+
       </header>
+
+
         <Pokedex/>
     </div>
   );
