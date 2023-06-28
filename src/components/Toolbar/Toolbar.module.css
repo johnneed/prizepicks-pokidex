@@ -63,12 +63,12 @@
 
 .toolbar_toggle-panel > span {
     display: block;
-    font-size: 1.6rem;
     position: absolute;
-    top: 0;
-    left: 0.3rem;
     transition: all 0.5s;
     color: #888;
+    font-size: 1rem;
+    top: 0.3rem;
+    left: 0.25rem;
 }
 
 .toolbar_toggle-panel:hover > span {
@@ -79,7 +79,7 @@
     display: block;
     position: absolute;
     top: 0.2rem;
-    left: 0.1rem;
+    left: 0.16rem;
     font-size: 1.2rem;
 }
 

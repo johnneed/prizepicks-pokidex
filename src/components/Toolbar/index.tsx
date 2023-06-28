@@ -24,7 +24,7 @@ export const Toolbar = ({ onSubmit, isResultsPanelOpen, toggleSearchPanel, openH
                 <button title={"search"} className={styles["toolbar_submit"]} onClick={search}>&#x1F50E;</button>
             </form>
             <button disabled={!isResultsPanelOpen} title={"Close Panel"}  className={styles["toolbar_toggle-panel"]} onClick={toggleSearchPanel}>
-                <span>&#128942;</span>
+                <span>❌</span>
             </button>
             <button title={"Search History"}  className={styles["toolbar_show-history"]} onClick={openHistory}>
                 <span className={styles["toolbar_open-search-history"]}>&#128214;</span>
