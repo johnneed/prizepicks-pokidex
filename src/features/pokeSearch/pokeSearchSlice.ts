@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState, AppThunk } from "../../app/store";
+import { RootState } from "../../app/store";
 import { Pokemon } from "pokenode-ts";
 import { getPokemonByName } from "./pokeSerchAPI";
 

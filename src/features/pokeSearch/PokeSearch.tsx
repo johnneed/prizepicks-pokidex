@@ -1,5 +1,4 @@
-import React, { useEffect, useState, Fragment } from "react";
-import { Pokemon } from "pokenode-ts";
+import React, { useState, Fragment } from "react";
 import styles from "./PokeSearch.module.css";
 import { useAppSelector, useAppDispatch } from "../../app/hooks";
 import {
@@ -23,7 +22,7 @@ export function PokeSearch({ children }: PokeSearchProps) {
     const history = useAppSelector(selectHistory);
     const searchStatus = useAppSelector(selectSearchStatus);
     const dispatch = useAppDispatch();
-    const selectedPokemon = searchStatus === "idle" ? history[historyIndex]: null;
+    const selectedPokemon = searchStatus === "idle" ? history[historyIndex] : null;
     const [content, setContent] = useState("search-results");
     const searchPokemon = (name: string) => {
         if (name && name !== "") {
@@ -43,7 +42,7 @@ export function PokeSearch({ children }: PokeSearchProps) {
     };
 
     const setHistoryIndex = (index: number) => {
-        if(index >=0 && index <history.length) { // Sanity Check
+        if (index >= 0 && index < history.length) { // Sanity Check
             dispatch(setSearchHistoryIndex(index));
             setContent("search-results");
         }
