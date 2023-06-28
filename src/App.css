@@ -1,70 +1,71 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+    .App-logo {
+        animation: App-logo-float infinite 3s ease-in-out;
+    }
 }
 
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
 }
 
 .App-link {
-  color: rgb(112, 76, 182);
+    color: rgb(112, 76, 182);
 }
 
 @keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
-.App-scroll-down{
-  text-align: center;
-  margin: 1rem auto;
-  transition: 1s;
+.App-scroll-down {
+    text-align: center;
+    margin: 1rem auto;
+    transition: 1s;
 }
 
 
-
-.App-caret-down{
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 50px solid #999;
-  margin: 0 auto;
-  transition: 1s;
+.App-caret-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #999;
+    margin: 0 auto;
+    transition: 1s;
 
 }
-.App-scroll-down:hover .App-caret-down{
-  border-top: 50px solid #555;
+
+.App-scroll-down:hover .App-caret-down, App-hover-target:hover + .App-scroll-down > .App-caret-down {
+    border-top: 50px solid #555;
 }
 
-.App-scroll-message{
-  margin-top: 1rem;
-  color: white;
-  transition: 1s;
+.App-scroll-message {
+    margin-top: 1rem;
+    color: white;
+    transition: 1s;
 }
-.App-scroll-down:hover .App-scroll-message {
-  color: #555;
+
+.App-scroll-down:hover .App-scroll-message, .App-hover-target:hover + div.App-scroll-down > .App-scroll-message {
+    color: #555;
 }

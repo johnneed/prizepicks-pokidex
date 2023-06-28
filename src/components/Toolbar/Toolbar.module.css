@@ -1,0 +1,96 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    z-index: 10;
+    background: rgba(100, 100, 255, 0.7);
+}
+
+.toolbar_search {
+    border: solid 1px #999;
+    border-radius: 5px;
+    height: 1.8rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.toolbar_input {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    outline: none;
+    padding: 0 0.2rem;
+}
+
+.toolbar_submit {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+    width: 2rem;
+    cursor: pointer;
+    transition: all, 1s;
+    margin: 0
+}
+
+.toolbar_submit:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.toolbar_toggle-panel, .toolbar_show-history {
+    border: solid 2px #AAA;
+    height: 1.6rem;
+    width: 1rem;
+    margin: 0 0 0 1rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: content-box;
+    cursor: pointer;
+    transition: all 1s;
+    position: relative;
+    vertical-align: top;
+}
+
+
+.toolbar_toggle-panel:hover, .toolbar_show-history:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: #555;
+}
+
+.toolbar_toggle-panel > span {
+    display: block;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 0;
+    left: 0.3rem;
+    transition: all 0.5s;
+    color: #888;
+}
+
+.toolbar_toggle-panel:hover > span {
+    color: #000;
+}
+
+.toolbar_show-history > span {
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.toolbar_toggle-panel:disabled {
+    cursor: not-allowed;
+    background-color: #EEE;
+    color: #CCC;
+    border-color: #CCC;
+}
+
+.toolbar_toggle-panel:disabled > span {
+    color: #CCC !important;
+}
+

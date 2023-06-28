@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+.search-history{
+    width: 100%;
+    height: calc(100vh - 10rem);
+    overflow: auto;
+}
+.search-history_back-header {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    transition: all 0.5s;
+    background-color: #EEE;
+    cursor: pointer;
+    width :100%;
+}
+.search-history_back-header:hover{
+    background-color: #FFF;
+}
+.search-history_small-image {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.search-history_name {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding-top: 1rem;
+    font-family: Courgette;
+    font-size: 3rem;
+    color: rgb(255, 145, 0);
+    text-shadow: rgba(0, 0, 0, 100) 1px 1px;
+
+}
+.search-history_no-history{
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    color: orangered;
+    font-size: 2rem;
+    line-height: 3rem;
+}

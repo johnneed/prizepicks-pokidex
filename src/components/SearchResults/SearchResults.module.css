@@ -1,0 +1,9 @@
+.search-results{}
+.search-results_error {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    color: orangered;
+    font-size: 2rem;
+    line-height: 3rem;
+}

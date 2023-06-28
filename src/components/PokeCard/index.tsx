@@ -20,7 +20,7 @@ export const PokeCard =  ({pokemon}: PokeCardProps) => {
               <img className={styles.pokecard_image} alt={pokemon.name} src={image} />
             </div>
             <div className={styles.pokecard_types}>
-              {pokemon.types.map(t => (<PokeTypePill pokemonType={t}/>))}
+              {pokemon.types.map(t => (<PokeTypePill key={t.type.name} pokemonType={t}/>))}
             </div>
           </section>
           <section className={styles.pokecard_back}>
@@ -36,12 +36,12 @@ export const PokeCard =  ({pokemon}: PokeCardProps) => {
                   pokemon
                       .abilities
                       .filter(a => !a.is_hidden)
-                      .map(a => (<div>{a.ability.name}</div>))
+                      .map(a => (<div key={a.ability.name}>{a.ability.name}</div>))
                 }</div>
               </div>
             </div>
             <div className={styles.pokecard_stats}>
-              {pokemon.stats.map(stat => (<div><span>{stat.stat.name}</span><span>{stat.base_stat}</span></div>))}
+              {pokemon.stats.map(stat => (<div key={stat.stat.name}><span>{stat.stat.name}</span><span>{stat.base_stat}</span></div>))}
             </div>
 
           </section>

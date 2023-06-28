@@ -1,72 +1,85 @@
-.poke-pill-type{
-  display: inline-block;
-  padding: 0;
-  margin: 0.5rem;
-  border-radius: 5px;
+.poke-pill-type {
+    display: inline-block;
+    padding: 0;
+    margin: 0.5rem;
+    border-radius: 5px;
 }
-.poke-pill-type div{
-  background-color: #333;
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
+
+.poke-pill-type div {
+    background-color: #333;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
 
 }
 
 
-div.fire{
-  background-color: crimson;
+div.fire {
+    background-color: crimson;
 }
 
-div.grass{
-  background-color: darkgreen;
+div.grass {
+    background-color: darkgreen;
 }
 
-div.water{
-  background-color: darkblue;
+div.water {
+    background-color: darkblue;
 }
 
-div.poison{
-  background-color: darkviolet;
+div.poison {
+    background-color: darkviolet;
 }
 
-div.normal{
-  background-color: darkslategray;
+div.normal {
+    background-color: darkslategray;
 }
 
-div.flying{
-  background-color: deepskyblue;
+div.flying {
+    background-color: deepskyblue;
 }
 
-div.fairy{
-  background-color: deeppink;
-}
-div.bug{
-  background-color: darkgoldenrod;
-}
-div.ground{
-  background-color: saddlebrown;
-}
-div.fighting{
-  background-color: firebrick;
+div.fairy {
+    background-color: deeppink;
 }
 
-div.electric{
-  background-color: blanchedalmond;
-  color: black;
+div.bug {
+    background-color: darkgoldenrod;
 }
 
-div.psychic{
-  background-color: lavender;
-  color:  black;
-}
-div.dragon{
-  background-color: firebrick;
+div.ground {
+    background-color: saddlebrown;
 }
 
-div.rock{background-color: peru;}
-div.steel{background-color: silver;
-color: black;}
-div.ice{background-color: aliceblue;
-color: black;}
+div.fighting {
+    background-color: firebrick;
+}
+
+div.electric {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+div.psychic {
+    background-color: lavender;
+    color: black;
+}
+
+div.dragon {
+    background-color: firebrick;
+}
+
+div.rock {
+    background-color: peru;
+}
+
+div.steel {
+    background-color: silver;
+    color: black;
+}
+
+div.ice {
+    background-color: aliceblue;
+    color: black;
+}
 
 

@@ -35,6 +35,13 @@
       "react-app/jest"
     ]
   },
+  "prettier": {
+    "trailingComma": "none",
+    "singleQuote": false,
+    "printWidth": 80,
+    "tabWidth": 4,
+    "semicolons": true
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,5 +53,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "babel-jest": "^29.5.0",
+    "prettier": "2.8.8",
+    "prettier-eslint": "15.0.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }
