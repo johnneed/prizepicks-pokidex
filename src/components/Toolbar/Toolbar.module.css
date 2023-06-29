@@ -10,7 +10,7 @@
 }
 
 .toolbar_search {
-    border: solid 1px #999;
+    border: solid 3px black;
     border-radius: 5px;
     height: 1.8rem;
     display: inline-block;
@@ -23,6 +23,7 @@
     height: 100%;
     outline: none;
     padding: 0 0.2rem;
+    min-width: 12rem;
 }
 
 .toolbar_submit {
@@ -42,55 +43,38 @@
 
 
 .toolbar_toggle-panel, .toolbar_show-history {
-    border: solid 2px #AAA;
-    height: 1.6rem;
-    width: 1rem;
     margin: 0 0 0 1rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.9);
     box-sizing: content-box;
     cursor: pointer;
     transition: all 1s;
-    position: relative;
     vertical-align: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: solid 3px #EEE;
+    background-color: #EEE;
+    height: 1.4rem;
+    width: 0.8rem;
+    box-shadow: 0 0 0 4px black
 }
 
 
 .toolbar_toggle-panel:hover, .toolbar_show-history:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-color: #555;
+    background-color: white;
+    border-color: white;
+
 }
 
-.toolbar_toggle-panel > span {
-    display: block;
-    position: absolute;
-    transition: all 0.5s;
-    color: #888;
-    font-size: 1rem;
-    top: 0.3rem;
-    left: 0.25rem;
-}
 
-.toolbar_toggle-panel:hover > span {
-    color: #000;
-}
-
-.toolbar_show-history > span {
-    display: block;
-    position: absolute;
-    top: 0.2rem;
-    left: 0.16rem;
-    font-size: 1.2rem;
-}
 
 .toolbar_toggle-panel:disabled {
     cursor: not-allowed;
     background-color: #EEE;
-    color: #CCC;
-    border-color: #CCC;
+    border-color: #EEE;
+    box-shadow: 0 0 0 4px #555;
+    backdrop-filter: brightness(20%);
 }
 
-.toolbar_toggle-panel:disabled > span {
-    color: #CCC !important;
-}
 
